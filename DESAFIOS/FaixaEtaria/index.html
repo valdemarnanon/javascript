@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa etária</title>
+    <script>
+
+        const nome = prompt('Digite seu nome: ');
+        const idade = prompt('Digite sua idade: ');
+
+        if(idade >= 0 && idade < 15) {
+            document.write(`<h1>Olá ${nome}, você é uma criança</h1>`);
+        } else if(idade >= 15 && idade < 30){
+            document.write(`<h1>Olá ${nome}, você é um jovem</h1>`);
+        } else if(idade >= 30 && idade < 60) {
+            document.write(`<h1>Olá ${nome}, você é um adulto</h1>`);
+        } else if(idade >= 60) {
+            document.write(`<h1>Olá ${nome}, você é um idoso</h1>`);
+        } else {
+            document.write('<h1>Digite uma idade verdadeira!</h1>')
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
