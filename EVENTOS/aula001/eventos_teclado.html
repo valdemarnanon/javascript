@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        function acao01() {
+            alert('Fui o segundo ;-; [ onkeypress ]');
+        }
+        function acao02() {
+            alert('Eu fui o primeiro [ onkeydown ]');
+        }
+        function acao03() {
+            alert('Sou muito lento meu parcero [ onkeyup ]');
+        }
+
+    </script>
+</head>
+<body>
+    <input onkeydown="acao02()" onkeyup="acao03()" onkeypress="acao01()" type="text">
+</body>
+</html>
