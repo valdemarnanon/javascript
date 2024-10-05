@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        // let listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria'];
+        let listaConvidados = Array();
+        listaConvidados['a'] = 'Jorge';
+        listaConvidados[10] = 'Jamilton';
+        listaConvidados['zebra'] = 'José';
+        listaConvidados[-1] = 'Ana';
+        listaConvidados[true] = 'Maria';
+
+        for(let x in listaConvidados) {
+            document.write('Indice ' + x + ' valor ' + listaConvidados[x] + '<hr>');
+        }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
