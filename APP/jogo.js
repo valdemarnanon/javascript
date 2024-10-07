@@ -1,7 +1,23 @@
 let altura = 0;
 let largura = 0;
 let vidas = 1;
-let tempo = 5;
+let tempo = 20;
+
+let criaMosquitoTempo = 1500;
+
+let nivel = window.location.search;
+nivel.replace('?', '');
+
+if(nivel === 'normal') {
+    //1500
+    criaMosquitoTempo = 1500;
+} else if(nivel === 'dificil'){
+    //1000
+    criaMosquitoTempo = 1000;
+} else if(nivel === 'chucknorris') {
+    //1500
+    criaMosquitoTempo = 750;
+}
 
 function ajustaTamanhoPalcoJogo() {
     altura = window.innerHeight;
@@ -19,7 +35,7 @@ let cronometro = setInterval(function() {
     if(tempo < 0) {
         clearInterval(cronometro);
         clearInterval(criaMosca);
-        window.location.href = 'vitoria.html'
+        window.location.href = 'vitoria.html';
     } else {
         document.getElementById('cronometro').innerHTML = tempo
     }
