@@ -17,7 +17,9 @@ let cronometro = setInterval(function() {
     tempo -= 1;
 
     if(tempo < 0) {
-        window.location.href="";
+        clearInterval(cronometro);
+        clearInterval(criaMosca);
+        window.location.href = 'vitoria.html'
     } else {
         document.getElementById('cronometro').innerHTML = tempo
     }
@@ -29,9 +31,10 @@ function posicaoRandomica() {
     if(document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove();
 
+        //console.log('Elemento selecionado foi: v' + vidas);
         if(vidas > 3){
             
-            window.location.href = 'fim_de_jogo.html'
+            window.location.href = 'fim_de_jogo.html';
         }
 
         document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.png';
