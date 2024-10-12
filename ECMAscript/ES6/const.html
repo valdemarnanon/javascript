@@ -9,20 +9,14 @@
 
     <script type="text/babel">
 
-        let serie = 'Friends';
-        {
-            let serie = 'The Walking Ded';
-            console.log('Dentro do bloco: ' + serie);
+        const serie = 'Frieds';
+
+        function x(){
+            const serie = 'The Walking Dead'
+            console.log('Dentro da função ' + serie);
         }
-        console.log('Fora do bloco: ' + serie);
-
-
-        // 3 escopos: global, função e bloco
-
-        // if(true) {
-        //     let serie = 'Friends'
-        // }
-
+        x();
+        console.log('Fora da função ' + serie);
     </script>
 </head>
 <body>
